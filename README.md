@@ -31,6 +31,7 @@ En ne conservant que les $k$ plus grandes valeurs singulières ($k \ll \min(m, n
 $$A_k = U_k \cdot \Sigma_k \cdot V_k^T$$
 
 Cette réduction permet de filtrer le bruit, d'extraire les structures sémantiques sous-jacentes et de reconstruire les notes manquantes.
+
 ---
 
 ## Technologies Utilisées
