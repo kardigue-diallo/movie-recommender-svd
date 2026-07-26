@@ -18,20 +18,19 @@ L'objectif est d'exploiter les propriétés de l'algèbre linéaire pour prédir
 
 Toute matrice de notes $A \in \mathbb{R}^{m \times n}$ (représentant $m$ utilisateurs et $n$ films) peut être décomposée sous la forme :
 
-$$A = U \Sigma V^T$$
+$$A = U \cdot \Sigma \cdot V^T$$
 
 Où :
 * **$U \in \mathbb{R}^{m \times m}$** : Matrice orthogonale (profils latents des utilisateurs).
 * **$\Sigma \in \mathbb{R}^{m \times n}$** : Matrice diagonale contenant les **valeurs singulières** $\sigma_1 \ge \sigma_2 \ge \dots \ge 0$.
 * **$V^T \in \mathbb{R}^{n \times n}$** : Matrice orthogonale (caractéristiques latentes des films).
 
-### SVD Tronquée (*Truncated SVD*) :
+### SVD Tronquée :
 En ne conservant que les $k$ plus grandes valeurs singulières ($k \ll \min(m, n)$), nous obtenons la meilleure approximation de rang $k$ de la matrice originale :
 
-$$A_k = U_k \Sigma_k V_k^T$$
+$$A_k = U_k \cdot \Sigma_k \cdot V_k^T$$
 
 Cette réduction permet de filtrer le bruit, d'extraire les structures sémantiques sous-jacentes et de reconstruire les notes manquantes.
-
 ---
 
 ## Technologies Utilisées
